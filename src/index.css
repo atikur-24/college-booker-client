@@ -1,0 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.my-color {
+  color: #1cb098;
+}
+
+.title-color {
+  color: #2f2a55;
+}
+
+.my-container{
+  @apply px-4 md:px-24 lg:px-8 py-16 lg:py-24 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl
+}
+
+.my-btn{
+  @apply cursor-pointer bg-[#1cb098] hover:bg-black rounded-md px-3 py-2 md:px-6 md:py-4 uppercase tracking-wide font-medium md:font-semibold text-white transition duration-200
+}
+.my-btn-outline{
+  @apply hover:bg-[#1cb098] hover:text-white rounded-lg px-3 py-2 md:px-6 md:py-4 font-medium md:font-semibold transition duration-300 border border-[#f34e3a] text-[#f34e3a]
+}
+
+.active {
+  @apply tracking-wide bg-teal-500 transition-colors duration-200
+}
+
+.default {
+  @apply tracking-wide  hover:text-teal-600 transition-colors duration-200 hover:bg-transparent
+}
