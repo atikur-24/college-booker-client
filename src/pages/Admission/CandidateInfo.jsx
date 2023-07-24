@@ -1,14 +1,18 @@
 import { useForm } from "react-hook-form"
 import { useLoaderData } from "react-router-dom";
+import Swal from "sweetalert2";
+import { useAuth } from "../../hooks/useAuth";
 
 const image_hosting_token = import.meta.env.VITE_IMAGE_UPLOAD_TOKEN;
 
 const CandidateInfo = () => {
+    const { user } = useAuth();
     const college = useLoaderData();
 
     const {
         register,
         handleSubmit,
+        reset,
         formState: { errors },
     } = useForm();
 
@@ -17,6 +21,7 @@ const CandidateInfo = () => {
     const onSubmit = (data) => {
         data["college_name"] = college.college_name;
         data["college_image"] = college.college_image;
+        data["email"] = user?.email;
 
         const formData = new FormData();
         formData.append('image', data.image[0]);
@@ -32,26 +37,27 @@ const CandidateInfo = () => {
                     data["image"] = imgURL
                 }
         })
-        console.log(data);
 
-        // fetch('http://localhost:5000/candidatesInfo', {
-        //     method: 'POST',
-        //     headers: {
-        //         'Content-Type': 'application/json'
-        //     },
-        //     body: JSON.stringify(data)
-        // })
-        // .then(res => res.json())
-        // .then(data => {
-        //     console.log(data);
-        //     // Swal.fire({
-        //     //     position: 'top-end',
-        //     //     icon: 'success',
-        //     //     title: 'Your work has been saved',
-        //     //     showConfirmButton: false,
-        //     //     timer: 1500
-        //     //   })
-        // })
+        fetch('http://localhost:5000/candidatesInfo', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(data)
+        })
+        .then(res => res.json())
+        .then(data => {
+            if(data.insertedId) {
+                Swal.fire({
+                    position: 'top-end',
+                    icon: 'success',
+                    title: 'Submit Successful!',
+                    showConfirmButton: false,
+                    timer: 1500
+                  })
+                  reset();
+            }         
+        })
     }
 
     return (
