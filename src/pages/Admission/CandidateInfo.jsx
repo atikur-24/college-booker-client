@@ -34,29 +34,28 @@ const CandidateInfo = () => {
             .then(imgResponse => {
                 if (imgResponse.success) {
                     const imgURL = imgResponse.data.display_url;
-                    data["image"] = imgURL
+                    data["image"] = imgURL;
+                    fetch('http://localhost:5000/candidatesInfo', {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json'
+                        },
+                        body: JSON.stringify(data)
+                    })
+                    .then(res => res.json())
+                    .then(data => {
+                        if(data.insertedId) {
+                            Swal.fire({
+                                position: 'top-end',
+                                icon: 'success',
+                                title: 'Submit Successful!',
+                                showConfirmButton: false,
+                                timer: 1500
+                              })
+                              reset();
+                        }         
+                    })
                 }
-        })
-
-        fetch('http://localhost:5000/candidatesInfo', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json'
-            },
-            body: JSON.stringify(data)
-        })
-        .then(res => res.json())
-        .then(data => {
-            if(data.insertedId) {
-                Swal.fire({
-                    position: 'top-end',
-                    icon: 'success',
-                    title: 'Submit Successful!',
-                    showConfirmButton: false,
-                    timer: 1500
-                  })
-                  reset();
-            }         
         })
     }
 

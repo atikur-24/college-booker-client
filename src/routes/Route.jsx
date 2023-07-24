@@ -9,11 +9,13 @@ import SignUp from "../signUp/SignUp";
 import Login from "../login/Login";
 import PrivateRoute from "./PrivateRoute";
 import MyColleges from "../myColleges/MyColleges";
+import ErrorPage from "../ErrorPage/ErrorPage";
 
 const router = createBrowserRouter([
     {
         path: '/',
         element: <Main />,
+        errorElement: <ErrorPage />,
         children: [
             {
                 path: '/',
@@ -40,7 +42,7 @@ const router = createBrowserRouter([
             },
             {
                 path: 'myColleges',
-                element: <MyColleges />
+                element: <PrivateRoute> <MyColleges /> </PrivateRoute>
             },
             {
                 path: 'signUp',
