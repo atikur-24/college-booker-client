@@ -3,10 +3,11 @@ import AdmissionProcess from "../shared/AdmissionProcess";
 import Marquee from "react-fast-marquee";
 import Events from "../shared/Events";
 import Sports from "../shared/Sports";
+import Research from "../shared/Research";
 
 const CollegeDetails = () => {
     const data = useLoaderData();
-    const { college_image, college_name, events_facilities, admission_date, description, sports_facilities } = data;
+    const { college_image, college_name, events_facilities, admission_date, description, sports_facilities, research_work } = data;
 
     return (
         <section className="px-4 md:px-24 pb-16 lg:pb-24 lg:px-8 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl">
@@ -36,6 +37,8 @@ const CollegeDetails = () => {
                 <Sports sportInfo={sports_facilities} />
             </div>
             <div className="py-16 lg:py-24">
+            <h3 className="font-semibold text-2xl md:text-3xl border-b-2 border-teal-500 pb-2 w-fit mx-auto mb-8 md:mb-12 title-color">Research Work</h3>
+                <Research research_work={research_work} />
             </div>
         </section>
     );
