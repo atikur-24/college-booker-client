@@ -1,4 +1,4 @@
-import { HiMinus, HiOutlineGlobeAlt, HiOutlineLocationMarker, HiOutlineMail, HiOutlinePhone, HiPlus } from "react-icons/hi";
+import { HiOutlineGlobeAlt, HiOutlineLocationMarker, HiOutlineMail, HiOutlinePhone, HiPlus } from "react-icons/hi";
 import logo from '../../../assets/images/others/logo-white.png'
 const Footer = () => {
     return (
