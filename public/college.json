@@ -1,0 +1,242 @@
+[
+    {
+        "college_image": "https://img.freepik.com/premium-photo/luxurious-new-building-with-curb-appeal_1127-4448.jpg?w=740",
+        "college_name": "Tech Institute",
+        "admission_date": "2023-09-01",
+        "research_work": [
+            {
+                "name": "Artificial Intelligence",
+                "img": "https://img.freepik.com/free-vector/web-analytics-background-brain-seo-icons_33099-2017.jpg?w=740&t=st=1690179160~exp=1690179760~hmac=380f06165b692cb802462440090690b6866162049b427cb8312621805b90a92e",
+                "desc": "A significant proportion of elderly and psychiatric patients do not have the capacity to make health care decisions."
+            },
+            {
+                "name": "Representing Communication",
+                "img": "https://img.freepik.com/free-photo/person-working-html-computer_23-2150038853.jpg?w=740&t=st=1690179333~exp=1690179933~hmac=d9a2b3319ea97a3e716349da0429ba4bb192d03061c954468e660504b92b316b",
+                "desc": "Artificial intelligence (AI) is now integrated into a variety of fields, including medicine. AI applications raise numerous ethical questions"
+            },
+            {
+                "name": "The Internet, Ethics",
+                "img": "https://www.freepik.com/free-photo/homepage-concept-with-search-bar_36029330.htm#query=research%20Internet&position=5&from_view=search&track=ais",
+                "desc": "False beliefs—those at odds with established bodies of evidence—have a number of origins, including the internet or personal experience."
+            },
+            {
+                "name": "Ethical Hacking",
+                "img": "https://img.freepik.com/free-photo/shot-from-back-dangerous-hacker-making-dangerous-virus-identity-theft_482257-34244.jpg?w=740&t=st=1690179392~exp=1690179992~hmac=fb9fe147e73dc448cf54bdcf9376a8b40af79a38b7ec7504b90d9b2a7bf7bc21",
+                "desc": "A learning health system provides opportunities to leverage data generated in the course of standard clinical care to improve clinical practice."
+            }
+        ],
+        "events_facilities": [
+            "Speaker giving a talk on scientific conference",
+            "https://img.freepik.com/premium-photo/speaker-giving-talk-scientific-conference-audience-conference-hall-business-entrepreneurship-concept_561846-238.jpg?w=740",
+            "The institute regularly organizes tech conferences and workshops for students and professionals. Tech Institute has pioneered breakthroughs in technology and computer science."
+        ],
+        "sports_facilities": [
+            "Field for hockey",
+            "https://img.freepik.com/free-photo/aerial-view-grass-field-hockey_23-2149668570.jpg?w=740&t=st=1690176740~exp=1690177340~hmac=2bcdc768119bbc57516fa06ae82882e4eab0e4b35943eaa5a0ea14fcd4d0b7d5",
+            "Modern sports facilities to promote physical well-being and foster a competitive spirit. recreational sports activities are available to promote a well-balanced lifestyle."
+        ],
+        "rating": 4.2,
+        "description": "Tech Institute is a leading institution for technology-related studies. With top-notch faculty and cutting-edge research labs, it prepares students for the ever-evolving tech industry and empowers them to become successful innovators.",
+        "number_of_research": 10
+    },
+    {
+        "college_image": "https://img.freepik.com/free-photo/red-buildings-households_1127-2024.jpg?w=740&t=st=1690028914~exp=1690029514~hmac=90d0f3bfdc8fff237fbf97358bc8e76614b8bba3e618c399f7c1e2279e6a220e",
+        "college_name": "Arts College",
+        "admission_date": "2023-09-10",
+        "research_work": [
+            {
+                "name": "The Next Generation ",
+                "img": "https://img.freepik.com/free-vector/team-people-work-with-seo-analytic-data-concept-business-analysis-search-engine-optimization-internet-vector-flat-illustration-teamwork-office-with-graphs-charts_107791-10615.jpg?w=996&t=st=1690188098~exp=1690188698~hmac=505a95458700992b4b9c487fcb918f1b65a6c86b815627c12b78fad330c9d264",
+                "desc": "THE OBESITY EPIDEMIC IS NOT THE FIRST MAJOR health crisis that the United States has faced. In recent decades progress has been made."
+            },
+            {
+                "name": "Quality of Life ",
+                "img": "https://img.freepik.com/free-photo/scientific-biochemistry-genetics-engineering-concept_53876-13618.jpg?w=740&t=st=1690179662~exp=1690180262~hmac=bf301cb7cc07527eaaf54a5d9209be437f24c98850303caa90dcee207fe19a1b",
+                "desc": "Patients with cutaneous lupus erythematosus (CLE) have very poor quality of life1. When compared to those with other skin diseases. "
+            },
+            {
+                "name": "Inferior Oblique Myokymia",
+                "img": "https://img.freepik.com/free-photo/book-library-with-old-open-textbook-stack-piles-literature-text-archive-reading-desk_1150-9087.jpg?w=740&t=st=1690179622~exp=1690180222~hmac=40f66dfcfb7320cba192741d848260980ea14286002eeb5b4d5d83491c94b4a1",
+                "desc": "tinct zones, each with different venous drainage. Between these 2 zones, a watershed developed."
+            },
+            {
+                "name": "Should Crowdsourced",
+                "img": "https://img.freepik.com/free-photo/lab-technicians-talking-video-call-with-professional-chemist-doctor-explaning-vaccine-reactions_482257-507.jpg?w=826&t=st=1690188035~exp=1690188635~hmac=3522079c8db30c42e5db11dd95b6e95b6ce4c89f105286b2b96a057483dbd8a5",
+                "desc": "Internet technology makes information from both peer-reviewed sources and crowdsourced content, such as Wikipedia, instantly accessible."
+            }
+        ],
+        "events_facilities": [
+            "Cinematic image of a conference meeting",
+            "https://img.freepik.com/premium-photo/cinematic-image-conference-meeting_186382-30532.jpg?w=740",
+            "The college showcases various art exhibitions, theater performances, and cultural events. Arts College has a long tradition of fostering creativity and artistic expression."
+        ],
+        "sports_facilities": [
+            "ports tools",
+            "https://img.freepik.com/free-photo/sports-tools_53876-138077.jpg?w=740&t=st=1690176838~exp=1690177438~hmac=f9e906103ae41a4eaf75c837a08eb5c2c3f7c0ce798d2a76fc091e8e6d519a3a",
+            "Recreational sports activities are available to promote a well-balanced lifestyle. Modern sports facilities to promote physical well-being and foster a competitive spirit."
+        ],
+        "rating": 4.0,
+        "description": "Arts College is dedicated to nurturing talent and fostering a deep appreciation for the arts. It offers a wide array of artistic disciplines and encourages students to explore their creative potential.",
+        "number_of_research": 17
+    },
+    {
+        "college_image": "https://img.freepik.com/free-photo/windows-skyscraper-business-office_1112-1079.jpg?w=740&t=st=1690029085~exp=1690029685~hmac=a12d0cd861d577b27e2f0488c164b0589e4fbe8e4de436de081c8eee58d81258",
+        "college_name": "Business School",
+        "admission_date": "2023-08-30",
+        "research_work": [
+            {
+                "name": "Inferior Oblique Myokymia",
+                "img": "https://img.freepik.com/free-photo/book-library-with-old-open-textbook-stack-piles-literature-text-archive-reading-desk_1150-9087.jpg?w=740&t=st=1690179622~exp=1690180222~hmac=40f66dfcfb7320cba192741d848260980ea14286002eeb5b4d5d83491c94b4a1",
+                "desc": "tinct zones, each with different venous drainage. Between these 2 zones, a watershed developed."
+            },
+            {
+                "name": "Should Crowdsourced",
+                "img": "https://img.freepik.com/free-photo/lab-technicians-talking-video-call-with-professional-chemist-doctor-explaning-vaccine-reactions_482257-507.jpg?w=826&t=st=1690188035~exp=1690188635~hmac=3522079c8db30c42e5db11dd95b6e95b6ce4c89f105286b2b96a057483dbd8a5",
+                "desc": "Internet technology makes information from both peer-reviewed sources and crowdsourced content, such as Wikipedia, instantly accessible."
+            },
+            {
+                "name": "Micropipette Filling Test",
+                "img": "https://img.freepik.com/free-photo/scientist-nurse-using-micropipette-filling-test-tubes-modern-equipped-laboratory-working-overtime_482257-492.jpg?w=826&t=st=1690178275~exp=1690178875~hmac=47354e724de16a67121bebc689a597ebbdf5e41be142098b981793af6f0776ca",
+                "desc": "Pediatric studies have shown that aerobic exercise reduces metabolic risk, but dose-response information is not available."
+            },
+            {
+                "name": "Blood Pressure, and  Hypertension",
+                "img": "https://img.freepik.com/free-photo/male-doctor-hands-measuring-tension-patient_23-2148352063.jpg?w=740&t=st=1690178825~exp=1690179425~hmac=025fdc1cb5566d6f979c4a159c0f7b529e4c537a1f35941c3f60c99bc2e93860",
+                "desc": "Vascular stiffness increases with advancing age and is a major risk factor for age-related morbidity and mortality."
+            }
+        ],
+        "events_facilities": [
+            "Business conversation teamwork concept",
+            "https://img.freepik.com/premium-photo/disfocus-convention-hall-background-busines_38810-5113.jpg?w=740",
+            "Business School is renowned for producing successful entrepreneurs and business leaders. Fitness center and sports fields available to promote a healthy work-life balance. about business how to improve it and many more topics."
+        ],
+        "sports_facilities": [
+            "Tennis field with balls in basket",
+            "https://img.freepik.com/free-photo/paddle-tennis-field-with-balls-basket_23-2149459001.jpg?w=740&t=st=1690176991~exp=1690177591~hmac=1e6edfed303cd12d9d0b8663f219745de3ffe78960f70727fc0249b479cb1d9d",
+            "The school conducts seminars, conferences, and networking events to enhance business acumen. Sports complex equipped with various sports facilities to promote physical fitness."
+        ],
+        "rating": 4.4,
+        "description": "Business School provides a dynamic learning environment for aspiring business professionals. It offers cutting-edge business programs and equips students with the knowledge and skills to excel in the corporate world.",
+        "number_of_research": 11
+    },
+    {
+        "college_image": "https://img.freepik.com/premium-photo/view-stanford-university-palo-alto-silicon-valley-california-usa_479694-3092.jpg?w=740",
+        "college_name": "Medical College",
+        "admission_date": "2023-09-20",
+        "research_work": [
+            {
+                "name": "Dim Modern",
+                "img": "https://img.freepik.com/free-photo/teamwork-dim-modern-lab_1098-18429.jpg?w=740&t=st=1690177542~exp=1690178142~hmac=42a3cb86b512de55cb2009f53c5433d40287e39ad5286ca1cec3e5f41110079f",
+                "desc": "Medical College has contributed significantly to medical research and healthcare advancements."
+            },
+            {
+                "name": "Micropipette Filling Test",
+                "img": "https://img.freepik.com/free-photo/scientist-nurse-using-micropipette-filling-test-tubes-modern-equipped-laboratory-working-overtime_482257-492.jpg?w=826&t=st=1690178275~exp=1690178875~hmac=47354e724de16a67121bebc689a597ebbdf5e41be142098b981793af6f0776ca",
+                "desc": "Pediatric studies have shown that aerobic exercise reduces metabolic risk, but dose-response information is not available."
+            },
+            {
+                "name": "Blood Pressure, and  Hypertension",
+                "img": "https://img.freepik.com/free-photo/male-doctor-hands-measuring-tension-patient_23-2148352063.jpg?w=740&t=st=1690178825~exp=1690179425~hmac=025fdc1cb5566d6f979c4a159c0f7b529e4c537a1f35941c3f60c99bc2e93860",
+                "desc": "Vascular stiffness increases with advancing age and is a major risk factor for age-related morbidity and mortality."
+            },
+            {
+                "name": "Preexposure Prophylaxis for HIV",
+                "img": "https://img.freepik.com/free-photo/doctor-performing-medical-research-lab_23-2149335671.jpg?w=740&t=st=1690178748~exp=1690179348~hmac=118f0eb66b99246b9803227d4de53c2681d96da444dc81fb8039f291ed2903b1",
+                "desc": "the US Food and Drug Administration for preexposure prophylaxis (PrEP) of human immunodeficiency virus (HIV) for adults"
+            }
+        ],
+        "events_facilities": [
+            "Doctor presentation team of interim doctors",
+            "https://img.freepik.com/free-photo/doctor-giving-presentation-team-interim-doctors_107420-84781.jpg?w=740&t=st=1690189542~exp=1690190142~hmac=49eece27a0db140e8fb7294cf3deef78813dee8ee81a7a1783097223eb03cb4f",
+            "The college organizes medical conferences, workshops, and health awareness campaigns. Medical College has contributed significantly to medical research and healthcare advancements. and discuss lot's of topics"
+        ],
+        "sports_facilities": [
+            "Physiotherapy clinic equipment",
+            "https://img.freepik.com/free-photo/equipment-rehabilitation-interior-physiotherapy-clinic_1139-1202.jpg?w=740&t=st=1690177162~exp=1690177762~hmac=2111d17e183781b66a7a73e36bb8472984be1c470971c1409e85ef56fff3f023",
+            "Sports and fitness facilities provided to promote the physical well-being of medical students. Sports complex equipped with various sports facilities to promote physical fitness."
+        ],
+        "rating": 4.6,
+        "description": "Medical College is dedicated to producing competent healthcare professionals. With state-of-the-art medical facilities and experienced faculty, it prepares students to address medical challenges and make a positive impact on people's lives.",
+        "number_of_research": 20
+    },
+    {
+        "college_image": "https://img.freepik.com/premium-photo/green-environment-office-buildings-science-technology-park-chongqing-china_1112-6198.jpg?w=740",
+        "college_name": "Engineering Institute",
+        "admission_date": "2023-08-25",
+        "research_work": [
+            {
+                "name": "Artificial Intelligence",
+                "img": "https://img.freepik.com/free-vector/web-analytics-background-brain-seo-icons_33099-2017.jpg?w=740&t=st=1690179160~exp=1690179760~hmac=380f06165b692cb802462440090690b6866162049b427cb8312621805b90a92e",
+                "desc": "A significant proportion of elderly and psychiatric patients do not have the capacity to make health care decisions."
+            },
+            {
+                "name": "Representing Communication",
+                "img": "https://img.freepik.com/free-photo/person-working-html-computer_23-2150038853.jpg?w=740&t=st=1690179333~exp=1690179933~hmac=d9a2b3319ea97a3e716349da0429ba4bb192d03061c954468e660504b92b316b",
+                "desc": "Artificial intelligence (AI) is now integrated into a variety of fields, including medicine. AI applications raise numerous ethical questions"
+            },
+            {
+                "name": "Blood Pressure, and  Hypertension",
+                "img": "https://img.freepik.com/free-photo/male-doctor-hands-measuring-tension-patient_23-2148352063.jpg?w=740&t=st=1690178825~exp=1690179425~hmac=025fdc1cb5566d6f979c4a159c0f7b529e4c537a1f35941c3f60c99bc2e93860",
+                "desc": "Vascular stiffness increases with advancing age and is a major risk factor for age-related morbidity and mortality."
+            },
+            {
+                "name": "Micropipette Filling Test",
+                "img": "https://img.freepik.com/free-photo/scientist-nurse-using-micropipette-filling-test-tubes-modern-equipped-laboratory-working-overtime_482257-492.jpg?w=826&t=st=1690178275~exp=1690178875~hmac=47354e724de16a67121bebc689a597ebbdf5e41be142098b981793af6f0776ca",
+                "desc": "Pediatric studies have shown that aerobic exercise reduces metabolic risk, but dose-response information is not available."
+            }
+        ],
+        "events_facilities": [
+            "Connection earth world map concept",
+            "https://img.freepik.com/free-photo/cartography-connection-earth-world-map-concept_53876-163256.jpg?w=740&t=st=1690174493~exp=1690175093~hmac=b21f681516b0fdf4b72d4dbb49c42a13f6323acf3f73d9e52add64151b8cf2a2",
+            "The institute conducts engineering expos, seminars, and tech competitions for students. Engineering Institute is at the forefront of technological advancements and research breakthroughs"
+        ],
+        "sports_facilities": [
+            "Shot kickball team on field",
+            "https://img.freepik.com/free-photo/long-shot-kickball-team-field_23-2149457221.jpg?w=740&t=st=1690177303~exp=1690177903~hmac=52529221c8e7bd6d52cdc8506a6b4b3a66cdad44bfb645aa3de1b208f0ec3e31",
+            "Sports complex equipped with various sports facilities to promote physical fitness. State-of-the-art sports facilities available for students, encouraging a healthy lifestyle."
+        ],
+        "rating": 4.3,
+        "description": "Engineering Institute offers a comprehensive range of engineering programs with a focus on innovation and problem-solving. It prepares students to be leaders in the engineering industry and tackle complex engineering challenges.",
+        "number_of_research": 16
+    },
+    {
+        "college_image": "https://img.freepik.com/free-photo/modern-amphitheater-usa_1268-14358.jpg?w=740&t=st=1690029138~exp=1690029738~hmac=e91da982c8e27d045620b16ddea41a6c28a76ae09970b1f3ee9bd2cfe4a968bc",
+        "college_name": "NUSE University",
+        "admission_date": "2023-08-15",
+        "research_work": [
+            {
+                "name": "Ethical Hacking",
+                "img": "https://img.freepik.com/free-photo/shot-from-back-dangerous-hacker-making-dangerous-virus-identity-theft_482257-34244.jpg?w=740&t=st=1690179392~exp=1690179992~hmac=fb9fe147e73dc448cf54bdcf9376a8b40af79a38b7ec7504b90d9b2a7bf7bc21",
+                "desc": "A learning health system provides opportunities to leverage data generated in the course of standard clinical care to improve clinical practice."
+            },
+            {
+                "name": "Quality of Life ",
+                "img": "https://img.freepik.com/free-photo/scientific-biochemistry-genetics-engineering-concept_53876-13618.jpg?w=740&t=st=1690179662~exp=1690180262~hmac=bf301cb7cc07527eaaf54a5d9209be437f24c98850303caa90dcee207fe19a1b",
+                "desc": "Patients with cutaneous lupus erythematosus (CLE) have very poor quality of life1. When compared to those with other skin diseases. "
+            },
+            {
+                "name": "Inferior Oblique Myokymia",
+                "img": "https://img.freepik.com/free-photo/book-library-with-old-open-textbook-stack-piles-literature-text-archive-reading-desk_1150-9087.jpg?w=740&t=st=1690179622~exp=1690180222~hmac=40f66dfcfb7320cba192741d848260980ea14286002eeb5b4d5d83491c94b4a1",
+                "desc": "tinct zones, each with different venous drainage. Between these 2 zones, a watershed developed."
+            },
+            {
+                "name": "Dim Modern",
+                "img": "https://img.freepik.com/free-photo/teamwork-dim-modern-lab_1098-18429.jpg?w=740&t=st=1690177542~exp=1690178142~hmac=42a3cb86b512de55cb2009f53c5433d40287e39ad5286ca1cec3e5f41110079f",
+                "desc": "Medical College has contributed significantly to medical research and healthcare advancements."
+            }
+        ],
+        "events_facilities": [
+            "How to improve interpersonal skills",
+            "https://img.freepik.com/premium-photo/large-business-presentation_263512-2511.jpg?w=826",
+            "The university hosts various events throughout the year, providing a vibrant campus life. With a diverse range of programs and exceptional faculty, it strives to provide students with a transformative educational experience"
+        ],
+        "sports_facilities": [
+            "Sideways tennis racket and balls",
+            "https://img.freepik.com/free-photo/sideways-tennis-racket-balls_23-2148218677.jpg?w=740&t=st=1690177439~exp=1690178039~hmac=abc727876383d18f32a9cc50740b6708782e648d50476af1662b680f442c6aa8",
+            "State-of-the-art sports facilities available for students, encouraging a healthy lifestyle. recreational sports activities are available to promote a well-balanced lifestyle"
+        ],
+        "rating": 5,
+        "description": "NSUE University is renowned for its academic excellence and commitment to research and innovation. With a diverse range of programs and exceptional faculty, it strives to provide students with a transformative educational experience.",
+        "number_of_research": 14
+    }
+]

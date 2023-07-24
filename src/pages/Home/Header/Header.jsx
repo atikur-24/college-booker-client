@@ -7,7 +7,7 @@ const Header = () => {
         <li><NavLink to='/' className={({ isActive }) => (isActive ? "active" : "default")}>Home</NavLink></li>
         <li><NavLink to='/colleges' className={({ isActive }) => (isActive ? "active" : "default")}>Colleges</NavLink></li>
         <li><NavLink to='/admission' className={({ isActive }) => (isActive ? "active" : "default")}>Admission</NavLink></li>
-        <li><NavLink to='/myCollege' className={({ isActive }) => (isActive ? "active" : "default")}>My Colleges</NavLink></li>
+        <li><NavLink to='/myColleges' className={({ isActive }) => (isActive ? "active" : "default")}>My Colleges</NavLink></li>
     </>
 
     return (

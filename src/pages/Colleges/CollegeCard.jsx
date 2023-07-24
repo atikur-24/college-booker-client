@@ -17,7 +17,7 @@ const CollegeCard = ({ college }) => {
                     <div className="inline-flex items-center gap-2 badge badge-outline p-5 text-[16px] font-semibold">
                         <HiStar /> <span className="text-gray-600">{rating}</span>
                     </div>
-                    <Link to={`/details/:${_id}`} className="my-btn inline-flex items-center gap-1"> Details <HiArrowRight /></Link>
+                    <Link to={`/details/${_id}`} className="my-btn inline-flex items-center gap-1"> Details <HiArrowRight /></Link>
                 </div>
             </div>
         </div>
