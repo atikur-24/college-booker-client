@@ -35,7 +35,7 @@ const Avatar = () => {
                         <div className='flex flex-col cursor-pointer'>
                             {user ? (
                                 <>
-                                    <Link className='px-4 py-3 hover:bg-neutral-100 transition font-semibold cursor-pointer'>
+                                    <Link to='/profile' className='px-4 py-3 hover:bg-neutral-100 transition font-semibold cursor-pointer'>
                                         {user?.displayName}
                                     </Link>
                                     <div onClick={handleLogout} className='px-4 py-3 hover:bg-neutral-100 transition font-semibold cursor-pointer'>

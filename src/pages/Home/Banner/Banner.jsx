@@ -6,7 +6,7 @@ const Banner = () => {
     const [colleges, setColleges] = useState([]);
 
     useEffect(() => {
-        fetch('http://localhost:5000/colleges')
+        fetch('https://college-booker-server-zeta.vercel.app/colleges')
             .then(res => res.json())
             .then(data => setColleges(data.slice(0, 3)))
     }, [])

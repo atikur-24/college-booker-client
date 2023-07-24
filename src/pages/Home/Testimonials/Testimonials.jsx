@@ -17,7 +17,7 @@ const Testimonials = () => {
     const [reviews, setReviews] = useState([]);
 
     useEffect(() => {
-        fetch('http://localhost:5000/feedback')
+        fetch('https://college-booker-server-zeta.vercel.app/feedback')
             .then(res => res.json())
             .then(data => setReviews(data))
     }, [])

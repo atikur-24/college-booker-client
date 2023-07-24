@@ -11,7 +11,7 @@ const MyColleges = () => {
     const [colleges, setColleges] = useState([]);
 
     useEffect(() => {
-        fetch(`http://localhost:5000/candidatesInfo/${user?.email}`)
+        fetch(`https://college-booker-server-zeta.vercel.app/candidatesInfo/${user?.email}`)
             .then(res => res.json())
             .then(data => setColleges(data))
     }, [user])
@@ -33,7 +33,7 @@ const MyColleges = () => {
 
     const onSubmit = (data) => {
         data["name"] = user?.displayName;
-        fetch('http://localhost:5000/feedback', {
+        fetch('https://college-booker-server-zeta.vercel.app/feedback', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'

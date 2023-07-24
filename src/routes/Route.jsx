@@ -10,6 +10,7 @@ import Login from "../login/Login";
 import PrivateRoute from "./PrivateRoute";
 import MyColleges from "../myColleges/MyColleges";
 import ErrorPage from "../ErrorPage/ErrorPage";
+import Profile from "../profile/Profile";
 
 const router = createBrowserRouter([
     {
@@ -28,17 +29,17 @@ const router = createBrowserRouter([
             {
                 path: 'details/:id',
                 element: <PrivateRoute> <CollegeDetails /> </PrivateRoute>,
-                loader: ({ params }) => fetch(`http://localhost:5000/colleges/${params.id}`)
+                loader: ({ params }) => fetch(`https://college-booker-server-zeta.vercel.app/colleges/${params.id}`)
             },
             {
                 path: 'admission',
                 element: <Admission />,
-                loader: () => fetch('http://localhost:5000/colleges')
+                loader: () => fetch('https://college-booker-server-zeta.vercel.app/colleges')
             },
             {
                 path: 'candidateInfo/:id',
                 element: <CandidateInfo />,
-                loader: ({ params }) => fetch(`http://localhost:5000/colleges/${params.id}`)
+                loader: ({ params }) => fetch(`https://college-booker-server-zeta.vercel.app/colleges/${params.id}`)
             },
             {
                 path: 'myColleges',
@@ -51,6 +52,10 @@ const router = createBrowserRouter([
             {
                 path: 'login',
                 element: <Login />
+            },
+            {
+                path: 'profile',
+                element: <Profile />
             }
         ]
     }
