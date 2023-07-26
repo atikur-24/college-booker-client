@@ -5,8 +5,7 @@ const HomeBanner = ({ setColleges }) => {
     const [searchName, setSearchName] = useState("");
 
     const handleSearch = () => {
-
-        fetch(`https://college-booker-server-zeta.vercel.app/getByName/${searchName}`)
+        fetch(`http://localhost:5000/getByName/${searchName}`)
           .then((res) => res.json())
           .then((data) => {
             setColleges(data);

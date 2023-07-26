@@ -16,7 +16,7 @@ const Profile = () => {
     } = useForm();
 
     const onSubmit = (data) => {
-        fetch(`https://college-booker-server-zeta.vercel.app/candidatesInfo/${user?.email}`, {
+        fetch(`http://localhost:5000/candidatesInfo/${user?.email}`, {
             method: 'PUT',
             headers: {
               'Content-Type': 'application/json'
@@ -40,14 +40,14 @@ const Profile = () => {
 
 
     useEffect(() => {
-        fetch(`https://college-booker-server-zeta.vercel.app/candidatesInfo/${user?.email}`)
+        fetch(`http://localhost:5000/candidatesInfo/${user?.email}`)
             .then(res => res.json())
             .then(data => setColleges(data))
     }, [user])
 
     return (
-        <section>
-            <form onSubmit={handleSubmit(onSubmit)} className="card-body bg-base-200 rounded-lg p-20 md:p-24">
+        <section className="">
+            <form onSubmit={handleSubmit(onSubmit)} className="card-body bg-gradient-to-r from-rose-100 to-blue-100rounded-lg p-20 md:py-24 md:px-40 lg:px-80">
                 <h2 className="text-start md:text-center text-xl md:text-2xl font-semibold">Edit Your Profile</h2>
                 <div className="space-y-5">
 

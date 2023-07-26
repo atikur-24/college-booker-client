@@ -6,39 +6,44 @@ import { Navigation } from 'swiper/modules';
 import "swiper/css";
 import "swiper/css/navigation";
 import { useEffect, useState } from "react";
+import Spinner from '../../../components/Spinner';
 
 const customStyles = {
     itemShapes: RoundedStar,
-    activeFillColor: '#CD9003',
-    inactiveFillColor: '#A1A1A1',
+    activeFillColor: '#FAAF00',
+    inactiveFillColor: '#DBDBDB',
 };
 
 const Testimonials = () => {
     const [reviews, setReviews] = useState([]);
+    const [spinner, setSpinner] = useState(true);
 
     useEffect(() => {
-        fetch('https://college-booker-server-zeta.vercel.app/feedback')
+        fetch('http://localhost:5000/feedback')
             .then(res => res.json())
-            .then(data => setReviews(data))
+            .then(data => {
+                setReviews(data);
+                setSpinner(false);
+            })
     }, [])
     return (
         <section className="my-container">
             <h2 className='text-2xl md:text-[42px] pb-2 md:pb-4 font-bold tracking-wide title-color text-center'>Testimonials</h2>
-            <p className="text-gray-600 lg:text-center pb-10 pt-2 lg:mx-10"> Unveiling the Secrets of Popular Colleges: Where Dreams Take Flight. Popular colleges embody a perfect blend of academic excellence, vibrant campus life, and unmatched career opportunities.</p>
+            <p className="text-gray-600 font-medium lg:text-center pb-10 pt-2 lg:mx-10"> Unveiling the Secrets of Popular Colleges: Where Dreams Take Flight. Popular colleges embody a perfect blend of academic excellence, vibrant campus life, and unmatched career opportunities.</p>
+            { spinner && <Spinner /> }
             <Swiper navigation={true} modules={[Navigation]} className="mySwiper">
                 {
                     reviews.map(review => <SwiperSlide key={review._id}>
                         <div className="px-16 text-center space-y-10">
                             <Rating
-                                className="mx-auto mt-10"
-                                style={{ maxWidth: 200 }}
+                                className="mx-auto mt-10 max-w-[130px] lg:max-w-[200px]"
                                 value={review.rating}
                                 itemStyles={customStyles}
                                 readOnly
                             />
-                            <FaQuoteLeft className="text-8xl mx-auto" />
-                            <p>{review.details}</p>
-                            <h3 className="text-2xl font-medium tracking-wide text-[#CD9003]">{review.name}</h3>
+                            <FaQuoteLeft className="text-4xl lg:text-8xl mx-auto" />
+                            <p className='text-gray-600'>{review.feedback}</p>
+                            <h3 className="text-xl lg:text-2xl font-medium tracking-wide text-[#CD9003]">{review.name}</h3>
                         </div>
                     </SwiperSlide>)
                 }

@@ -1,5 +1,6 @@
 import Banner from "../Banner/Banner";
 import GraduateGallery from "../GraduateGallery/GraduateGallery";
+import ResearchPager from "../ResearchPaper/ResearchPager";
 import Testimonials from "../Testimonials/Testimonials";
 
 const Home = () => {
@@ -7,6 +8,7 @@ const Home = () => {
         <>
         <Banner />
         <GraduateGallery />
+        <ResearchPager />
         <Testimonials />
         </>
     );

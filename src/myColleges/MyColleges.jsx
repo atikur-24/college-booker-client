@@ -5,15 +5,20 @@ import { Controller, useForm } from "react-hook-form";
 import { Rating } from "@smastrom/react-rating";
 import '@smastrom/react-rating/style.css';
 import { Toaster, toast } from "react-hot-toast";
+import Spinner from "../components/Spinner";
 
 const MyColleges = () => {
     const { user } = useAuth();
     const [colleges, setColleges] = useState([]);
+    const [spinner, setSpinner] = useState(true);
 
     useEffect(() => {
-        fetch(`https://college-booker-server-zeta.vercel.app/candidatesInfo/${user?.email}`)
+        fetch(`http://localhost:5000/candidatesInfo/${user?.email}`)
             .then(res => res.json())
-            .then(data => setColleges(data))
+            .then(data => {
+                setColleges(data);
+                setSpinner(false)
+            })
     }, [user])
 
 
@@ -33,7 +38,7 @@ const MyColleges = () => {
 
     const onSubmit = (data) => {
         data["name"] = user?.displayName;
-        fetch('https://college-booker-server-zeta.vercel.app/feedback', {
+        fetch('http://localhost:5000/feedback', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -56,7 +61,7 @@ const MyColleges = () => {
             <section className="my-container">
                 <div className="overflow-x-auto">
                     <table className="table w-full">
-                        <thead className="bg-[#003a70] text-white">
+                        <thead className="bg-[#2f2a55] text-white">
                             <tr>
                                 <th>College image</th>
                                 <th>College name</th>
@@ -112,6 +117,7 @@ const MyColleges = () => {
                             ))}
                         </tbody>
                     </table>
+                    { spinner && <Spinner /> }
                 </div>
                 <div>
                 </div>

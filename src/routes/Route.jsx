@@ -29,17 +29,16 @@ const router = createBrowserRouter([
             {
                 path: 'details/:id',
                 element: <PrivateRoute> <CollegeDetails /> </PrivateRoute>,
-                loader: ({ params }) => fetch(`https://college-booker-server-zeta.vercel.app/colleges/${params.id}`)
+                loader: ({ params }) => fetch(`http://localhost:5000/colleges/${params.id}`)
             },
             {
                 path: 'admission',
-                element: <Admission />,
-                loader: () => fetch('https://college-booker-server-zeta.vercel.app/colleges')
+                element: <Admission />
             },
             {
                 path: 'candidateInfo/:id',
                 element: <CandidateInfo />,
-                loader: ({ params }) => fetch(`https://college-booker-server-zeta.vercel.app/colleges/${params.id}`)
+                loader: ({ params }) => fetch(`http://localhost:5000/colleges/${params.id}`)
             },
             {
                 path: 'myColleges',
@@ -60,5 +59,5 @@ const router = createBrowserRouter([
         ]
     }
 ])
-
+// http://localhost:5000/
 export default router;

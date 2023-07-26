@@ -1,5 +1,12 @@
-import { HiArrowRight, HiStar } from "react-icons/hi";
+import { Rating, RoundedStar } from "@smastrom/react-rating";
+import { HiArrowRight } from "react-icons/hi";
 import { Link } from "react-router-dom";
+import '@smastrom/react-rating/style.css';
+const customStyles = {
+    itemShapes: RoundedStar,
+    activeFillColor: '#FAAF00',
+    inactiveFillColor: '#DBDBDB',
+};
 
 const CollegeCard = ({ college }) => {
     const { _id, college_image, college_name, rating, number_of_research, admission_date } = college;
@@ -14,10 +21,14 @@ const CollegeCard = ({ college }) => {
                     <p className="text-gray-600 "><span className="text-black font-medium">Number Of Research:</span> {number_of_research}</p>
                 </div>
                 <div className="card-actions justify-between items-center mt-4">
-                    <div className="inline-flex items-center gap-2 badge badge-outline p-5 text-[16px] font-semibold">
-                        <HiStar /> <span className="text-gray-600">{rating}</span>
-                    </div>
-                    <Link to={`/details/${_id}`} className="my-btn inline-flex items-center gap-1"> Details <HiArrowRight /></Link>
+                    <Rating
+                        className=""
+                        style={{ maxWidth: 110 }}
+                        value={rating}
+                        itemStyles={customStyles}
+                        readOnly
+                    />
+                    <Link to={`/details/${_id}`} className="my-btn inline-flex items-center gap-1 lg:btn-md"> Details <HiArrowRight /></Link>
                 </div>
             </div>
         </div>

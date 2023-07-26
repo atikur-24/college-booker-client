@@ -35,7 +35,7 @@ const CandidateInfo = () => {
                 if (imgResponse.success) {
                     const imgURL = imgResponse.data.display_url;
                     data["image"] = imgURL;
-                    fetch('https://college-booker-server-zeta.vercel.app/candidatesInfo', {
+                    fetch('http://localhost:5000/candidatesInfo', {
                         method: 'POST',
                         headers: {
                             'Content-Type': 'application/json'
