@@ -59,5 +59,4 @@ const router = createBrowserRouter([
         ]
     }
 ])
-// http://localhost:5000/
 export default router;

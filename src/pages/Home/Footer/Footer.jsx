@@ -38,7 +38,7 @@ const Footer = () => {
                             Register and get notified about all the news & updates before it gets too late. to up date with college booker
                         </p>
                         <div className="relative">
-                            <input type="text" placeholder="username@site.com" className="input input-bordered w-full pr-16 text-black" />
+                            <input type="text" placeholder="username@site.com" className="input input-bordered w-full bg-base-200 pr-16 text-black" />
                             <button className="btn btn-accent absolute top-0 right-0 rounded-l-none">Subscribe</button>
                         </div>
                     </div>

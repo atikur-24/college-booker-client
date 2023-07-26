@@ -147,8 +147,8 @@ const Login = () => {
                 <div className="lg:w-3/6 mx-auto">
                     <div className="divider my-8 md:my-10 font-medium">Or Sign in with</div>
                     <div className="flex items-center justify-between">
-                        <button onClick={handleTwitterSignIn} className="btn md:w-56"> <img src={twitterLogo} alt="twitter" /> Twitter </button>
-                        <button onClick={handleGoogleSignIn} className="btn md:w-56"> <img src={googleLogo} alt="google" /> Google </button>
+                        <button onClick={handleTwitterSignIn} className="btn btn-outline md:w-56"> <img src={twitterLogo} alt="twitter" /> Twitter </button>
+                        <button onClick={handleGoogleSignIn} className="btn btn-outline md:w-56"> <img src={googleLogo} alt="google" /> Google </button>
                     </div>
                 </div>
                 <p className="lg:text-[18px] text-center text-gray-700 pt-4 lg:pt-8">To New College Booker? {" "}

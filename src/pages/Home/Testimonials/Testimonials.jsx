@@ -29,7 +29,7 @@ const Testimonials = () => {
     return (
         <section className="my-container">
             <h2 className='text-2xl md:text-[42px] pb-2 md:pb-4 font-bold tracking-wide title-color text-center'>Testimonials</h2>
-            <p className="text-gray-600 font-medium lg:text-center pb-10 pt-2 lg:mx-10"> Unveiling the Secrets of Popular Colleges: Where Dreams Take Flight. Popular colleges embody a perfect blend of academic excellence, vibrant campus life, and unmatched career opportunities.</p>
+            <p className="text-gray-600 font-medium lg:text-center pb-10 pt-2 lg:mx-10">What Our Client Say About Specific College</p>
             { spinner && <Spinner /> }
             <Swiper navigation={true} modules={[Navigation]} className="mySwiper">
                 {
