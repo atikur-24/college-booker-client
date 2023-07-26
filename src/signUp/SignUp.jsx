@@ -5,6 +5,7 @@ import { Link, useNavigate } from "react-router-dom";
 import { useForm } from "react-hook-form";
 import { useAuth } from "../hooks/useAuth";
 import Swal from "sweetalert2";
+import DynamicTitle from "../components/DynamicTitle";
 
 const image_hosting_token = import.meta.env.VITE_IMAGE_UPLOAD_TOKEN;
 
@@ -68,6 +69,7 @@ const SignUp = () => {
 
     return (
         <>
+            <DynamicTitle>Sign Up</DynamicTitle>
             <BannerSection>Sign Up</BannerSection>
             <section className="px-6 md:px-24 lg:px-8 pb-12 lg:pb-20 bg-gradient-to-r from-rose-100 to-blue-100">
                 <form onSubmit={handleSubmit(onSubmit)} className="space-y-5 md:space-y-7 lg:w-3/6 mx-auto">

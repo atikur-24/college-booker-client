@@ -4,6 +4,7 @@ import Marquee from "react-fast-marquee";
 import Events from "../shared/Events";
 import Sports from "../shared/Sports";
 import Research from "../shared/Research";
+import DynamicTitle from "../../components/DynamicTitle";
 
 const CollegeDetails = () => {
     const data = useLoaderData();
@@ -11,6 +12,7 @@ const CollegeDetails = () => {
 
     return (
         <section className="px-4 md:px-24 pb-16 lg:pb-24 lg:px-8 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl">
+            <DynamicTitle>Details</DynamicTitle>
             <div className='bg-base-200 flex p-1 lg:p-3 gap-3 my-5'>
                 <button className='btn btn-neutral'>Notice</button>
                 <Marquee speed={100} className='font-semibold'>

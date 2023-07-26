@@ -6,6 +6,7 @@ import { Rating } from "@smastrom/react-rating";
 import '@smastrom/react-rating/style.css';
 import { Toaster, toast } from "react-hot-toast";
 import Spinner from "../components/Spinner";
+import DynamicTitle from "../components/DynamicTitle";
 
 const MyColleges = () => {
     const { user } = useAuth();
@@ -13,7 +14,7 @@ const MyColleges = () => {
     const [spinner, setSpinner] = useState(true);
 
     useEffect(() => {
-        fetch(`http://localhost:5000/candidatesInfo/${user?.email}`)
+        fetch(`https://college-booker-server-zeta.vercel.app/candidatesInfo/${user?.email}`)
             .then(res => res.json())
             .then(data => {
                 setColleges(data);
@@ -38,7 +39,7 @@ const MyColleges = () => {
 
     const onSubmit = (data) => {
         data["name"] = user?.displayName;
-        fetch('http://localhost:5000/feedback', {
+        fetch('https://college-booker-server-zeta.vercel.app/feedback', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -57,6 +58,7 @@ const MyColleges = () => {
 
     return (
         <>
+        <DynamicTitle>My Colleges</DynamicTitle>
             <BannerSection>My Colleges</BannerSection>
             <section className="my-container">
                 <div className="overflow-x-auto">

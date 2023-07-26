@@ -6,6 +6,7 @@ import { useState } from "react";
 import Swal from "sweetalert2";
 import googleLogo from '../assets/images/signIn/google.png';
 import twitterLogo from '../assets/images/signIn/twitter.png';
+import DynamicTitle from "../components/DynamicTitle";
 
 const Login = () => {
     const { login, googleSignIn, twitterSignIn, forgotPassword } = useAuth();
@@ -100,6 +101,7 @@ const Login = () => {
 
     return (
         <>
+        <DynamicTitle>Login</DynamicTitle>
             <BannerSection>Login</BannerSection>
             <section className="px-6 md:px-24 lg:px-8 pb-12 lg:pb-20 bg-gradient-to-r from-rose-100 to-blue-100">
                 <form onSubmit={handleSubmit(onSubmit)} className="space-y-5 md:space-y-7 lg:w-3/6 mx-auto">

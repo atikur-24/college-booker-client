@@ -2,6 +2,7 @@ import { useForm } from "react-hook-form"
 import { useLoaderData } from "react-router-dom";
 import Swal from "sweetalert2";
 import { useAuth } from "../../hooks/useAuth";
+import DynamicTitle from "../../components/DynamicTitle";
 
 const image_hosting_token = import.meta.env.VITE_IMAGE_UPLOAD_TOKEN;
 
@@ -35,7 +36,7 @@ const CandidateInfo = () => {
                 if (imgResponse.success) {
                     const imgURL = imgResponse.data.display_url;
                     data["image"] = imgURL;
-                    fetch('http://localhost:5000/candidatesInfo', {
+                    fetch('https://college-booker-server-zeta.vercel.app/candidatesInfo', {
                         method: 'POST',
                         headers: {
                             'Content-Type': 'application/json'
@@ -62,6 +63,7 @@ const CandidateInfo = () => {
     return (
         <section>
             <form onSubmit={handleSubmit(onSubmit)} className="card-body bg-base-200 rounded-lg p-20 md:p-24">
+                <DynamicTitle>Apply</DynamicTitle>
                 <h2 className="text-start md:text-center text-xl md:text-2xl font-semibold">Please fill up  carefully</h2>
                 <div className="space-y-5">
 

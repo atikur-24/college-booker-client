@@ -2,13 +2,14 @@ import { useEffect, useState } from "react";
 import BannerSection from "../shared/BannerSection";
 import CollegeCard from "./CollegeCard";
 import Spinner from "../../components/Spinner";
+import DynamicTitle from "../../components/DynamicTitle";
 
 const Colleges = () => {
     const [colleges, setColleges] = useState([]);
     const [spinner, setSpinner] = useState(true);
 
     useEffect(() => {
-        fetch('http://localhost:5000/colleges')
+        fetch('https://college-booker-server-zeta.vercel.app/colleges')
             .then(res => res.json())
             .then(data => {
                 setColleges(data);
@@ -18,6 +19,7 @@ const Colleges = () => {
 
     return (
         <>
+        <DynamicTitle>Colleges</DynamicTitle>
             <BannerSection>All College</BannerSection>
             <section className="my-container">
             { spinner && <Spinner /> }

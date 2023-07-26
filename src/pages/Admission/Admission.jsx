@@ -3,6 +3,7 @@ import BannerSection from "../shared/BannerSection";
 import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
 import Spinner from "../../components/Spinner";
+import DynamicTitle from "../../components/DynamicTitle";
 
 const Admission = () => {
     const [colleges, setColleges] = useState([]);
@@ -10,7 +11,7 @@ const Admission = () => {
 
 
     useEffect(() => {
-        fetch('http://localhost:5000/colleges')
+        fetch('https://college-booker-server-zeta.vercel.app/colleges')
             .then(res => res.json())
             .then(data => {
                 setColleges(data);
@@ -20,6 +21,7 @@ const Admission = () => {
 
     return (
         <>
+        <DynamicTitle>Admission</DynamicTitle>
             <BannerSection>Admission</BannerSection>
             <section className="my-container">
                 <h2 className="text-2xl md:text-4xl mx-auto font-semibold tracking-wide mb-5 md:mb-8 border-b-2 border-teal-500 w-fit pb-3">Available colleges for admission</h2>

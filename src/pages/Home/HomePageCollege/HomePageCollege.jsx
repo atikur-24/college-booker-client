@@ -11,7 +11,7 @@ const HomePageCollege = () => {
     const [searchName, setSearchName] = useState("");
 
     useEffect(() => {
-        fetch('http://localhost:5000/colleges')
+        fetch('https://college-booker-server-zeta.vercel.app/colleges')
             .then(res => res.json())
             .then(data => {
                 setColleges(data.slice(0, 3));
@@ -23,7 +23,7 @@ const HomePageCollege = () => {
         if (!searchName) {
             toast.error('Invalid search');
         } else {
-            fetch(`http://localhost:5000/getByName/${searchName}`)
+            fetch(`https://college-booker-server-zeta.vercel.app/getByName/${searchName}`)
                 .then((res) => res.json())
                 .then((data) => {
                     setColleges(data);

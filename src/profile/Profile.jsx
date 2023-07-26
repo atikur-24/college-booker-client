@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { useForm } from "react-hook-form";
 import { useAuth } from "../hooks/useAuth";
 import Swal from "sweetalert2";
+import DynamicTitle from "../components/DynamicTitle";
 
 const Profile = () => {
     const { user } = useAuth();
@@ -16,7 +17,7 @@ const Profile = () => {
     } = useForm();
 
     const onSubmit = (data) => {
-        fetch(`http://localhost:5000/candidatesInfo/${user?.email}`, {
+        fetch(`https://college-booker-server-zeta.vercel.app/candidatesInfo/${user?.email}`, {
             method: 'PUT',
             headers: {
               'Content-Type': 'application/json'
@@ -40,13 +41,14 @@ const Profile = () => {
 
 
     useEffect(() => {
-        fetch(`http://localhost:5000/candidatesInfo/${user?.email}`)
+        fetch(`https://college-booker-server-zeta.vercel.app/candidatesInfo/${user?.email}`)
             .then(res => res.json())
             .then(data => setColleges(data))
     }, [user])
 
     return (
-        <section className="">
+        <section>
+            <DynamicTitle>Profile</DynamicTitle>
             <form onSubmit={handleSubmit(onSubmit)} className="card-body bg-gradient-to-r from-rose-100 to-blue-100rounded-lg p-20 md:py-24 md:px-40 lg:px-80">
                 <h2 className="text-start md:text-center text-xl md:text-2xl font-semibold">Edit Your Profile</h2>
                 <div className="space-y-5">
