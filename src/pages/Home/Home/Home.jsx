@@ -1,12 +1,12 @@
-import Banner from "../Banner/Banner";
 import GraduateGallery from "../GraduateGallery/GraduateGallery";
+import HomePageCollege from "../HomePageCollege/HomePageCollege";
 import ResearchPager from "../ResearchPaper/ResearchPager";
 import Testimonials from "../Testimonials/Testimonials";
 
 const Home = () => {
     return (
         <>
-        <Banner />
+        <HomePageCollege />
         <GraduateGallery />
         <ResearchPager />
         <Testimonials />
