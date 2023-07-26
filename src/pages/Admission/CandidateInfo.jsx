@@ -111,7 +111,7 @@ const CandidateInfo = () => {
                             <label className="label">
                                 <span className="label-text font-semibold">Date of Birth<span className="text-red-600">*</span></span>
                             </label>
-                            <input {...register("dob", { required: true })} type="date" className="input input-bordered input-accent" />
+                            <input {...register("dob", { required: true })} type="text" placeholder="01-12-2000" className="input input-bordered input-accent" />
                             {errors.dob && <span className="text-red-600" >Date of birth field is required</span>}
                         </div>
                         <div className="form-control">

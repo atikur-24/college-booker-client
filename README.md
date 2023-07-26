@@ -1,8 +1,15 @@
-# React + Vite
+## College Fit website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+### Front-end Features
+* Implement searching by college name
+* Show all colleges card, graduation gallery
+* Include research paper at home page
+* Specific college information showing
+* User admit college and input his/her information
+* User send feedback and rating from my college route
+* User feedback and rating show home page
+* Implement firebase authentication
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Live Site Link 
+Hosted in Firebase -> [College Booker](https://college-booker-50fe6.web.app/)
